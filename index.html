@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Słodka Bułka - Piekarnia Cukiernia</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Karolina Gluza">
+    <meta name="keywords" content="Piekarnia, Cukiernia, Piekarniocukiernia, Ciasta, Torty, Babeczki, Pieczywo, Słodkości,Ciasteczka">
+    <meta name="description" content="Piekarnia Cukiernia Slodka Bulka zaprasza na swieze pieczywo i wyroby prosto z serca">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;700&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Funkcja aktualizująca licznik koszyka
+    function updateCartCounter() {
+        // Pobierz aktualny stan koszyka z localStorage lub API
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let totalItems = 0;
+        
+        cart.forEach(item => {
+            totalItems += item.ilosc;
+        });
+
+        const counter = document.querySelector('.cart-counter');
+        if (counter) {
+            if (totalItems > 0) {
+                counter.textContent = totalItems;
+                counter.style.display = 'flex';
+            } else {
+                counter.style.display = 'none';
+            }
+        }
+    }
+
+    // Inicjalna aktualizacja licznika
+    updateCartCounter();
+
+    // Nasłuchuj zmian w localStorage (aktualizacje z innych kart)
+    window.addEventListener('storage', function(e) {
+        if (e.key === 'cart') {
+            updateCartCounter();
+        }
+    });
+});
+</script>
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/3081/3081949.png" alt="Słodka Bułka">
+            Słodka Bułka
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="aktualnosci.html">Aktualności</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="icony">
+            <a href="konto.php"><i class="fas fa-user"></i></a>
+            <a href="koszyk.php">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-counter" style="display: none;">0</span>
+            </a>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="obraz">
+                <h1>Piekarnia-Cukiernia Słodka Bułka</h1>
+                <p>Świeże wypieki prosto z pieca, przygotowane z miłością i tradycyjnymi recepturami</p>
+                <a href="aktualnosci.html" class="zobaczwiecej">Zobacz więcej</a>
+        </section>
+
+        <div class="baner">
+            Nasze produkty
+        </div>
+
+        <section id="katalog">
+            <div class="produkt">
+                <a href="ciasta.php">
+                    <img src="https://ilovebake.pl/wp-content/uploads/2024/09/ciasto-napoleon-6-550x368.jpg" alt="ciasto">
+                <p>Ciasta</p></a>
+            </div>
+        
+            <div class="produkt">
+                <a href="torty.php">
+                    <img src="https://www.mojegotowanie.pl/media/cache/big/uploads/media/recipe/0002/46/tort-dla-mamy.jpg" alt="tort">
+                <p>Torty</p></a>
+            </div>
+        
+            <div class="produkt">
+                <a href="pieczywo.php">
+                    <img src="https://biogo.pl/blog/wp-content/uploads/2021/08/blogbiogo-pieczywo-rodzaje-i-wlasciwosci-odzywcze-1.jpg" alt="pieczywo">
+                <p>Pieczywo</p></a>
+            </div>
+        
+            <div class="produkt">
+                <a href="babeczki.php">
+                    <img src="https://wsuwaj.pl/wp-content/uploads/2023/09/babeczki-z-malinami.jpg" alt="babeczki">
+                <p>Babeczki</p></a>
+            </div>
+        
+            <div class="produkt">
+                <a href="ciasteczka.php">
+                    <img src="https://www.platebykate.com/wp-content/uploads/2021/12/ciasteczka-z-twarogu-5.jpg" alt="ciasteczka">
+                <p>Ciasteczka</p></a>
+            </div>
+        
+            <div class="produkt">
+                <a href="inne.php">
+                    <img src="https://www.przyslijprzepis.pl/media/cache/big/uploads/media/recipe/0008/79/makaroniki.jpeg" alt="inne slodycze makaroniki">
+                <p>Inne Słodycze</p></a>
+            </div>
+        </section>
+        
+
+        <section id="historia">
+            <div id="treschistori">
+            <div id="malynapis">Nasza Historia</div>
+            <h2>
+            Od 30 lat pieczemy z miłością!
+            </h2>
+            <h3>
+            W naszej piekarni-cukierni od trzech dekad tworzymy wyjątkowe smaki, które cieszą podniebienia naszych klientów. Łączymy tradycyjne receptury z najwyższej jakości składnikami, 
+            aby każde ciasto, chleb czy deser były pełne pasji i smaku. <br><br>Dziękujemy, że możemy być częścią Waszych wyjątkowych chwil – od codziennych poranków po wielkie uroczystości!
+            </h3>
+            <a href="onas.html" class="zobaczwiecej">
+            Poznaj naszą historię
+            </a>
+            </div>
+
+            <img src="https://www.marthastewart.com/thmb/YNmpDfponFllFxh0tMlh28DU_GM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ms-roberta-heart-chocolate-cake-161-d112178.jpg-b6f9fe7c8f4e425687dffdd063849107.jpg" alt="ciasto w kształcie serca">
+        </section>
+
+        <section id="nowosci">
+            <div class="baner">
+                NOWOŚCI
+                <a href="oferta.html"><div class="zobaczwiecej2">
+                    <p></p>
+                </div></a>
+            </div>
+            <div id="produktynowe">
+                <div id="produkt">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFx44Z93oGGKocnoCKu2F7j1AyHdqnxk3r1_qKEszabY4Qs4ZbWWoPeWsr2LwnfVYCzEXXQz0dEvhr25UlUeGqT4aBPFhHrNS79_V_h49jHZjYOIkMO8rPvmd42tfFsTPHDbNpQcZI_JU1/s1600/muffinka.jpg" alt="ciastko malinowe">
+                    <p>Babeczka malinowa 3.99 zł</p>
+                </div>    
+                <div id="produkt"> 
+                    <img src="https://laconditerra.pl/image/blog/Cupcake1.jpg" alt="ciastko czekoladowe z malinami">
+                    <p>Babeczka czekoladowa z malinami 4.99 zł</p>
+                </div>
+                <div id="produkt">
+                    <img src="https://laconditerra.pl/image/blog/Cupcake16.jpg" alt="ciastko czekoladowe z wanilowym kremem">
+                    <p>Babeczka czekoladowa z vanilia 4.59 zł</p>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="polecamy">
+            <div>
+                <div id=dzdjecie><img src="https://i.pinimg.com/564x/76/4f/28/764f2818e1559e78c8fe5f755a025df3.jpg" alt="duze zdjecie ciasta"></div>
+            </div>
+            <div>
+                <div id="malynapis"> <span style="margin-left: 30px;">Nasze Polecane</span></div>
+                <h2>Polecamy wyjątkowe przysmaki! </h2>
+            <h3>
+                Każdego dnia w naszej piekarni-cukierni tworzymy świeże, aromatyczne wypieki, które kuszą smakiem i zapachem. Chrupiące chleby, puszyste bułeczki, delikatne ciasta i wyborne desery – wszystko przygotowane odrobiną miłości. <br><br>Niezależnie od tego, czy szukasz słodkiej przyjemności do kawy, tortu na wyjątkową okazję czy tradycyjnego pieczywa, u nas znajdziesz coś idealnego dla siebie! 💛🥐🍰
+            </h3>
+            <div id="mzdjecia">
+                <img src="https://i.pinimg.com/736x/96/21/e6/9621e61a4658242cda917b9631883a8a.jpg" alt="male zdjecie ciasta">
+                <img src="https://i.pinimg.com/736x/82/84/30/828430d189a6e6a6687b1f9ee088db29.jpg" alt="male zdjecie ciasta2">
+                <img src="https://i.pinimg.com/736x/d5/36/69/d5366954c488e1b94c02d665b9615006.jpg" alt="make zdjecie ciasta3">
+            </div>
+            </div>
+       </section>
+    </main>
+    <footer>
+        <div class="baner">
+            KONTAKT
+            <a href="kontakt.html"><div class="zobaczwiecej2">
+                <p></p>
+            </div></a>
+        </div>
+        <div id="kontakt">
+            <div id="tekstkontakt">
+            <p>Lokalizacja:</p>
+            Piekarnia-Cukiernia Słodka Bułka:<br><br>
+            ul. Targowska 9 42-518 Warszawa<br>
+            ul. Piekarza 12 41-702 Kraków<br>
+            </div>
+            <div id="tekstkontakt">
+            <p>Numer Telefonu:</p>
+            +48 176 974 514<br>
+            +48 618 952 168<br>
+            <br>
+            <p>Email:</p>
+            Słodkabułka@gmail.com<br>
+            </div>
+            <div id="tekstkontakt">
+            <p>Zasady:</p>
+            Polityka cookies<br>
+            Ustawienia cookies<br>
+            Polityka prywatnosci<br>
+            Regulamin<br>
+            </div>
+            <div id="tekstkontakt">
+            <p>ZNAJDZ NAS:</p>
+                <a href="https://x.com/slodka_bulka_"><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/x-jvgvt5gje92oz29ez4fgd.png/x-0muuxjzgzvtlpaduv3p4k2s.png?_a=DATAdtAAZAA0" alt="twitter"></a>
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="istagram"></a><br>
+            </div>
+        </div>
+
+        <div id="terms">
+                © Piekarnia Cukiernia Słodka Bułka 2025 | Privacy Policy | Terms & Conditions
+            </div>
+    </footer>
+</body>
+</html>

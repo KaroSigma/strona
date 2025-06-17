@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Quicksand';
+}
+
+
+header {
+    background-color: #FFF8F0;;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.logo img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5A3921;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;;
+}
+
+.icony {
+    display: flex;
+    gap: 20px;
+}
+
+.icony a {
+    color: #5A3921;
+    font-size: 23px;
+    transition: color 0.3s;
+}
+
+.icony a:hover {
+    color: #FF6B6B;;
+}
+
+
+.wiadomosci p{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+
+#obraz {
+    height: 550px;
+    overflow: hidden;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('https://images4.alphacoders.com/722/722843.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+}
+
+#oferta {
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 40px;
+}
+
+#oferta h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#oferta h1::after {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+#oferta .intro {
+    max-width: 700px;
+    margin: 20px auto 0;
+    font-size: 20px;
+}
+
+#kategorie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px 20px 60px;
+    background-color: #fff1ea;
+}
+
+.kategoria {
+    margin-top: 50px;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 450px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.kategoria:hover {
+    transform: translateY(-5px);
+}
+
+.kategoria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kategoria h3 {
+    font-size: 22px;
+    color: #5d3a3a;
+    margin: 20px 0 10px;
+}
+
+.kategoria p {
+    font-size: 15px;
+    color: #555;
+    padding: 0 20px 20px;
+    line-height: 1.5;
+}
+
+.kategoria button {
+    background-color: #c49161;
+    border: none;
+    padding: 12px 20px;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kategoria button:hover {
+    background-color: #d4983c;
+}
+
+#kontakt {
+    background-color: #F0D7D2;
+    color: #691C1C;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 170px;
+    padding: 40px 20px;
+}
+
+
+#kontakt img{
+    width: 23px;
+    height: 23px;
+}
+
+#tekstkontakt
+{
+    max-width: 250px;
+    font-size: 16.5px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+#kontakt p{
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+#terms{
+    background-color: #D8B1A9;
+    text-align: center;
+    color: #371616;
+    font-size: 13.5px;
+} 

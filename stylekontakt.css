@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand';
+}
+
+
+header {
+    background-color: #FFF8F0;;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.logo img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5A3921;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;;
+}
+
+.icony {
+    display: flex;
+    gap: 20px;
+}
+
+.icony a {
+    color: #5A3921;
+    font-size: 23px;
+    transition: color 0.3s;
+}
+
+.icony a:hover {
+    color: #FF6B6B;;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+#obraz {
+    height: 550px;
+    overflow: hidden;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('https://i.guim.co.uk/img/media/728aaa16511b534771be25449400051bf583db7b/0_2291_4698_2817/master/4698.jpg?width=1200&quality=85&auto=format&fit=max&s=db8451c1ab6bf9f44cf4361d0bf779e2') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+}
+
+#oferta {
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 40px;
+}
+
+#oferta h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#oferta h1::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+#oferta .intro {
+    max-width: 700px;
+    margin: 20px auto 0;
+    font-size: 20px;
+}
+
+h3{
+    text-align: center;
+    margin: 50px;
+    font-size: 40px;
+    color:#371616;
+}
+
+h3::after{
+    content: '';
+    display: block;
+    width: 370px;
+    height: 4px;
+    background-color: #81414175;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+#godziny {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff6ee;
+    padding: 60px;
+    gap: 80px;
+} 
+.godziny-lista {
+    list-style: none;
+    padding: 0;
+    line-height: 2.1;
+    font-size: 18px;
+}
+.godziny-lista li {
+    padding: 4px 0;
+}
+
+.uwaga {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.zdjecie {
+    width: 830px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #5b3c1a;
+}
+
+.kontakty-cal{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: #fdf2e4;
+    padding: 60px 0;
+}
+
+#odwiedzic {
+    margin: 20px 0 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #7a4d25;
+}
+
+#tekst{
+    line-height: 2.2;
+}
+
+.boxyzkontaktem {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.boxyzkontaktem:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    background-color: #ffeee6;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 28px;
+    color: #e74c3c;
+}
+
+.tytul {
+    font-weight: bold;
+    font-size: 20px;
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+
+.tresc {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.kontakt-info {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#mapa {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px;
+    gap: 80px;
+    background-color: #fff6ee;
+  }
+  
+  .mapa-obraz {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    margin-right: 100px;
+  }
+  
+  .tekst {
+    flex: 1;
+    max-width: 550px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .tekst h4 {
+    color: #c0392b;
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .dojazd-lista {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+    margin-top: 10px;
+  }
+  
+  .dojazd-lista li {
+    margin-bottom: 10px;
+  }
+  
+  address {
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+
+#kontakt {
+    background-color: #F0D7D2;
+    color: #691C1C;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 170px;
+    padding: 40px 20px;
+}
+
+
+#kontakt img{
+    width: 23px;
+    height: 23px;
+}
+
+#tekstkontakt
+{
+    max-width: 250px;
+    font-size: 16.5px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+#kontakt p{
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+#terms{
+    background-color: #D8B1A9;
+    text-align: center;
+    color: #371616;
+    font-size: 13.5px;
+} 

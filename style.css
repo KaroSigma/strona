@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FFF8F0;;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.logo img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5A3921;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;;
+}
+
+.icony {
+    display: flex;
+    gap: 20px;
+}
+
+.icony a {
+    color: #5A3921;
+    font-size: 23px;
+    transition: color 0.3s;
+}
+
+.icony a:hover {
+    color: #FF6B6B;;
+}
+
+
+.wiadomosci p{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+.obraz {
+    height: 750px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://cdn.suwalls.com/wallpapers/photography/cakes-46028-3840x2160.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.obraz h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 72px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.obraz p {
+    font-size: 24px;
+    max-width: 700px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.zobaczwiecej {
+    max-width: 1920px;
+    display: inline-block;
+    background-color: #FF6B6B;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid #FF6B6B;
+    transition: transform 0.3s ease;
+}
+
+.zobaczwiecej:hover {
+    background-color: transparent;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.zobaczwiecej-outline {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.zobaczwiecej:hover {
+    background-color: white;
+    color: #FF6B6B;
+    border: #FF6B6B 1px solid;
+}
+
+.baner
+{
+    font-family: 'Amatic SC', cursive;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url('https://hirasweets.com/wp-content/uploads/revslider/bakery/bakery-wallpaper-hd-1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 160px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 25px;
+}
+
+#katalog 
+{
+    background-color: #fdf1e7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#katalog img
+{
+    height: 250px;
+    width: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 22px;
+    margin: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 10px solid #fff9f4;; /* #FFEEE0  albo biale*/
+    outline: 1px solid #ddc8c8;
+}
+
+#katalog a {
+    text-decoration: none;
+}
+
+.produkt {
+    text-align: center;
+    width: 500px;
+    transition: transform 0.3s ease;
+}
+
+.produkt p {
+    font-size: 22px;
+    margin-top: -15px;
+    font-weight: bold;
+    color: #694848;
+}
+
+.produkt:hover {
+    transform: translateY(-10px);
+}
+
+
+#historia {
+    max-width: 1920px;
+    margin-top: 50px;
+    background-color: #F8F1ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    line-height: 2.2;
+    gap: 80px;
+    padding: 0 40px;
+}
+
+#historia .zobaczwiecej {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+}
+
+#historia .zobaczwiecej p {
+    margin: 0;
+    font-weight: 500;
+}
+
+#treschistori {
+    max-width: 700px;
+}
+
+h2 {
+    color: #a04b4b;
+    font-size: 27.5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+h3 {
+    color: #744343;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 730px;
+    max-height: 400px;
+}
+
+#historia img {
+    width: 55%;
+    max-width: 650px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 0 rgba(194, 179, 179, 0.3);
+    object-fit: cover;
+}
+
+#malynapis {
+    color: #FF6B6B;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+#nowosci .baner
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('https://images8.alphacoders.com/132/1325358.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#produktynowe {
+    background-color: #FFF3F3;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+#produktynowe img
+{
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 22px;
+    box-shadow: 0 0 5px rgba(97, 27, 27, 0.5);
+    border: 10px solid rgb(255, 248, 248); 
+    outline: 1px solid #ddc8c8;
+    transition: transform 0.3s ease;
+}
+
+#produktynowe img:hover{
+    transform: translateY(-10px);
+}
+
+#produktynowe p {
+    background-color: white;
+    border: 2px solid rgb(190, 165, 165);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #664343;
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px auto 0 auto;
+}
+
+#polecamy {
+    margin: 50px 0;
+    background-color: #F8F1ED;
+    padding: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+#polecamy h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 27px;
+}
+
+#polecamy h3 {
+    margin-bottom: 45px;
+    margin-left: 30px;
+    line-height: 2.2;
+    margin-top: 30px;
+    font-size: 15.5px;
+}
+
+#polecamy img
+{
+    border-radius: 15px;
+  
+}
+ 
+#dzdjecie img
+{
+    width: 600px;
+    max-height: 540px;
+    box-shadow: -20px 20px 0 rgba(194, 179, 179, 0.3);
+}
+
+#mzdjecia img
+{
+    width: 190px;
+    height: 195px;
+    margin-left: 30px;
+    box-shadow: 0 0 10px rgba(97, 27, 27, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#mzdjecia img:hover{
+    transform: translateY(-10px);
+}
+
+footer .baner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),url("https://media.istockphoto.com/id/931047442/photo/wood-sphere-symbol-telephone-mail-address-and-mobile-phone-website-page-contact-us-or-e-mail.jpg?s=612x612&w=0&k=20&c=wf6z_9kU3fezivpX1hD8P82YSWMiK3P204jJ6vUPe_8=");
+}
+
+#kontakt {
+    background-color: #F0D7D2;
+    color: #691C1C;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 170px;
+    padding: 40px 20px;
+}
+
+
+#kontakt img{
+    width: 23px;
+    height: 23px;
+}
+
+#tekstkontakt
+{
+    max-width: 250px;
+    font-size: 16.5px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+#kontakt p{
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+#terms{
+    background-color: #D8B1A9;
+    text-align: center;
+    color: #371616;
+    font-size: 13.5px;
+} 
